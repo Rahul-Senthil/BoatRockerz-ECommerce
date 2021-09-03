@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Rockerz|Account</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    
+  </head>
+  <body style="background-color:  #c0e1e6;">
+    <!--navbar-->
+      <div class="nav-bar_container acc_nav">
+          <div class="navbar">
+              <div class="logo">
+                <img src="image/logo.jpeg" alt="">
+                <h2>BoAt Rockerz</h2>
+              </div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="home.html" class="id">Home</a></li>
+                    <li><a href="product.html" class="id">Products</a></li>
+                    <li><a href="about.html" class="id">About</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                    <li><a href="account.html" class="id">Account</a></li>
+                </ul>
+                <i class="fa fa-bars" id="acc_toggle" onclick="togglesidebar()"></i>
+          </nav>
+        </div>
+    </div>
+
+    <!--image container-->
+    <div class="account_con" style="font-family: 'Poppins,sans-serif';">
+      <div id="account_bg">
+        <img src="image/background_image_3.jpg">
+    </div>
+    <div class="form_con">
+      <div class="account_log">
+        <div class="title-btn">
+          <span onclick="SlideLeft()">Login</span>
+          <span onclick="SlideRight()">Register</span>
+          <hr id="indicator">
+        </div>
+        <form action="" id="register-form">
+          <input type="email" placeholder="Email-id">
+          <input type="text" placeholder="Username">
+          <input type="password" placeholder="Password" id="pass">
+          <p><i class="fa fa-lock" aria-hidden="true" id="see-hide"></i></p>
+          <button type="submit">Register</button>
+        </form>
+        <form action="" id="login-form">
+          <input type="text" placeholder="Username">
+          <input type="password" placeholder="Password" id="pass1">
+          <p><i class="fa fa-lock" aria-hidden="true" id="see-hide1"></i></p>
+          <button type="submit">Log In</button>
+          <p class="fg">Forgot password?</p>
+        </form>
+        
+       </div>
+     </div>
+  </div>
+
+  <!-- -----------Footer------------- -->
+  <div class="footer-container" id="footer" style="margin-top: 200px;">
+    <div class="partner-box">
+      <h5>Partners</h5>
+      <hr>
+       <a href="https://www.1stop.ai/" target="blank"><img src="image/1Stop 01.png" alt="" ></img></a>
+       <a href="https://lms1stopai.thinkific.com/" target="blank"><p>Support's School</p></a>
+    </div>
+    <div class="social_media">
+      <h5>Follow Us</h5>
+      <hr>
+      <ul>
+       <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></i></li>
+       <li><a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></i></li>
+       <!-- <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></i></li> -->
+       </ul>
+       <ul>
+       <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></i></li>
+       <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+       <!-- <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a></i></li> -->
+     </ul>
+
+    </div>
+    <div class="design_by">
+      <h5>PAGES</h5>
+      <hr>
+        <ul>
+          <a href="home.html"><li>Home</li></a>
+          <a href="product.html"><li>Products</li></a>
+          <a href="about.html"><li>About</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+          <a href="account.html"><li>Log Out</li></a>
+        </ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+       
+       var Login_form = document.getElementById("login-form"); 
+       var Register_form = document.getElementById("register-form"); 
+       var Indicator = document.getElementById("indicator"); 
+
+       function SlideRight()
+       {
+         Login_form.style.transform = "translateX(350px)";
+         Register_form.style.transform = "translateX(350px)";
+         Indicator.style.transform = "translateX(153px)";
+       }
+
+       function SlideLeft()
+       {
+        Login_form.style.transform = "translateX(5px)";
+        Register_form.style.transform = "translateX(5px)";
+        Indicator.style.transform = "translateX(0px)";
+       }
+
+  </script>
+
+  <script>
+    let See_hide = document.getElementById("see-hide");
+    let See_hide1 = document.getElementById("see-hide1");
+    let pass = document.getElementById("pass");
+    let pass1 = document.getElementById("pass1");
+
+    See_hide.onclick = () => {
+      if(pass.type === "password")
+      {
+        pass.type = "text";
+        See_hide.className = "fa fa-unlock-alt";
+      
+      }
+      else{
+        pass.type = "password";
+        See_hide.className = " fa fa-lock";
+      }
+    }
+
+    See_hide1.onclick = () => {
+      if(pass1.type === "password")
+      {
+        pass1.type = "text";
+        See_hide1.className = "fa fa-unlock-alt";
+      
+      }
+      else{
+        pass1.type = "password";
+        See_hide1.className = " fa fa-lock";
+      }
+    }
+
+
+  </script>
+
+<!-- <script>
+  var menuList = document.getElementById("nav-list");
+  menuList.style.maxHeight = "0px";
+  function togglesidebar(){
+    if(menuList.style.maxHeight == "0px")
+    {
+     menuList.style.maxHeight = "500px";
+    }
+    else if(menuList.style.maxHeight == "500px")
+    {
+     menuList.style.maxHeight = "0px";
+    }
+  }
+</script> -->
+</body>
+</html>

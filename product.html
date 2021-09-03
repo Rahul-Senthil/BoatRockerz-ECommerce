@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Rockerz|Products</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <!--navbar-->
+      <div class="nav-bar_container">
+          <div class="navbar">
+              <div class="logo">
+                <img src="image/logo.jpeg" alt="">
+                <h2>BoAt Rockerz</h2>
+              </div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="home.html" class="id">Home</a></li>
+                    <li><a href="product.html" class="id">Products</a></li>
+                    <li><a href="about.html" class="id">About</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                    <li><a href="account.html" class="id">Account</a></li>
+                    
+                </ul>
+          </nav>
+          <i class="fa fa-bars"  onclick="togglesidebar()"></i>
+        </div>
+    </div>
+
+    <!--products-->
+    <div  id="Products_"class="product_container">
+      <div class="ft-pro">
+        <h3>Feature Products</h3>
+        <hr>
+      </div>
+        <div class="product_box">
+          <!--1st-->
+          <div class="product_card col-4" id="PD_1">
+            <div class="image_box">
+              <img src="product_image/headphone/rockerz-450-blue_900x.png" id="SI_1">
+              <div class="overlay one">
+                <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+              </div>
+            </div>
+            <div class="product_details">
+              <div class="product_name">
+                <h4 id="PN_1">BoAt Rockerz 450 - Wireless Headphone</h4>
+              </div>
+              <div class="product_price">
+                <p id="PP_1">₹1499.00</p>
+              </div>
+            </div>
+          </div>
+          <!--2nd-->
+          <div class="product_card col-4" id="PD_2">
+            <div class="image_box">
+              <img src="product_image/headphone/rockerz-370-green_155c9fea-ec8d-4184-a39d-22ea6e8017a0_540x.png"  id="SI_2">
+              <div class="overlay">
+                <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+              </div>
+            </div>
+            <div class="product_details">
+              <div class="product_name">
+                <h4 id="PN_2">BoAt Rockerz 370  - Wireless Headphone</h4>
+              </div>
+              <div class="product_price">
+                <p id="PP_2">₹1199.00</p>
+              </div>
+            </div>
+          </div>
+          <!--3rd-->
+          <div class="product_card col-4" id="PD_3">
+            <div class="image_box">
+              <img src="product_image/airdopes/airdopes-441-yellow.png" id="SI_3">
+              <div class="overlay">
+                <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+              </div>
+            </div>
+            <div class="product_details">
+              <div class="product_name">
+                <h4 id="PN_3">BoAt Airdopes 441 - Wireless Earbuds</h4>
+              </div>
+              <div class="product_price">
+                <p id="PP_3">₹2499.00</p>
+              </div>
+            </div>
+            <!--4th-->
+          </div>
+          <div class="product_card col-4" id="PD_4">
+            <div class="image_box">
+              <img src="product_image/airdopes/airdopes-701-anc.png" id="SI_4">
+              <div class="overlay">
+                <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+              </div>
+            </div>
+            <div class="product_details">
+              <div class="product_name">
+                <h4 id="PN_4">BoAt Airdopes 701 - Wireless Earbuds</h4>
+              </div>
+                <div class="product_price">
+                  <p id="PP_4">₹3990.00</p>
+                </div>
+            </div>
+            <!--5th-->
+          </div>
+          <div class="product_card col-4" id="PD_5">
+            <div class="image_box">
+              <img src="product_image/earphone/rockerz-255f-red_.png" id="SI_5">
+              <div class="overlay five">
+                <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+              </div>
+            </div>
+            <div class=" product_details">
+              <div class="product_name">
+                <h4 id="PN_5">BoAt Rockerz 255F - Wireless Earphone </h4>
+              </div>
+              <div class="product_price">
+                <p id="PP_5">₹1499.00</p>
+              </div>
+            </div>
+            <!--6th-->
+          </div>
+          <div class="product_card col-4" id="PD_6">
+            <div class="image_box">
+              <img src="product_image/Speaker/main-img_7fdc52dd-e28d-45a9-b965-09366b5ebb0d_540x.png" id="SI_6">
+              <div class="overlay">
+                <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+              </div>
+            </div>
+            <div class="product_details">
+              <div class="product_name">
+                <h4 id="PN_6">BoAt Blitz 1500 - Bluetooth Speaker </h4>
+              </div>
+              <div class="product_price">
+                <p id="PP_6">₹2999.00</p>
+              </div>
+            </div>
+          </div>
+          <!--7th-->
+          <div class="product_card col-4"  id="PD_7">
+            <div class="image_box">
+              <img src="product_image/Speaker/stone-1200-blue_540x.png" id="SI_7">
+              <div class="overlay">
+                <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+              </div>
+            </div>
+            <div class="product_details">
+              <div class="product_name">
+                <h4 id="PN_7">BoAt Stone 1200 - Bluetooth Speaker</h4>
+              </div>
+              <div class="product_price">
+                <p id="PP_7">₹3999.00</p>
+              </div>
+            </div>
+          </div>
+          <!--8th-->
+          <div class="product_card col-4" id="PD_8">
+          <div class="image_box">
+            <img src="product_image/headphone/rockerz-510-orange_540x.png" id="SI_8">
+            <div class="overlay">
+              <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+            </div>
+          </div>
+            <div class="product_details">
+              <div class="product_name">
+                <h4 id="PN_8">BoAt Rockerz 510 - Wireless Headphone </h4>
+              </div>
+              <div class="product_price">
+                <p id="PP_8">₹1599.00</p>
+              </div>
+            </div>
+          </div>
+      <!--9th-->
+      <div class="product_card col-4" id="PD_9">
+        <div class="image_box">
+          <img src="product_image/airdopes/airdopes-131-pink.png" id="SI_9">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_9">TRebel Airdopes 131 - Wireless Earbuds</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_9">₹1299.00</p>
+          </div>
+        </div>
+      </div>
+      <!--10th-->
+      <div class="product_card col-4" id="PD_10">
+        <div class="image_box">
+          <img src="product_image/earphone/rockerz-255-pro-green_.png" id="SI_10">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_10">TRebel Rockerz 255 Pro- Wireless Earphone</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_10">₹1499.00</p>
+          </div>
+        </div>
+      </div>
+      <!--11th-->
+      <div class="product_card col-4" id="PD_11">
+        <div class="image_box">
+          <img src="product_image/earphone/rockerz-295-v2-lime_540x.png" id="SI_11">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_11">BoAt Rockerz 295 v2 - Wireless Earphone</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_11">₹1499.00</p>
+          </div>
+        </div>
+      </div>
+      <!--12th-->
+      <div class="product_card col-4" id="PD_12">
+        <div class="image_box">
+          <img src="product_image/airdopes/airdopes-381-blue.png" id="SI_12">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_12">BoAt Airdopes 381 - Wireless Earbuds</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_12">₹1899.00</p>
+          </div>
+        </div>
+      </div>
+      <!--13th-->
+      <div class="product_card col-4" id="PD_13">
+        <div class="image_box">
+          <img src="product_image/Speaker/stone-spinx-lfw-green_540x.png" id="SI_13">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_13">BoAt Stone 170 - Bluetooth Speaker</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_13">₹1299.00</p>
+          </div>
+        </div>
+      </div>
+      <!--14th-->
+      <div class="product_card col-4" id="PD_14">
+        <div class="image_box">
+          <img src="product_image/headphone/rockerz-560-red_540x.png" id="SI_14">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_14">BoAt Rockerz 560 - Wireless Headphone</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_14">₹1699.00</p>
+          </div>
+        </div>
+      </div>
+      <!--15th-->
+      <div class="product_card col-4" id="PD_15">
+        <div class="image_box">
+          <img src="product_image/headphone/nirvana-715-1_540x.png" id="SI_15">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_15"> Nirvana 715 ANC - Wireless Headphone</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_15">₹4499.00</p>
+          </div>
+        </div>
+      </div>
+      <!--16th-->
+      <div class="product_card col-4" id="PD_16">
+        <div class="image_box">
+          <img src="product_image/airdopes/airdopes-631-lightskyblue_.png" id="SI_16">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_16">BoAt Airdopes 631 -<br> TWS Earbuds</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_16">₹3999.00</p>
+          </div>
+        </div>
+      </div>
+       <!--17th-->
+       <div class="product_card col-4" id="PD_17">
+        <div class="image_box">
+          <img src="product_image/earphone/rockerz-235-v2-red_.png" id="SI_17">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_17">BoAt Rockerz 235 - Wireless Earphone</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_17">₹1049.00</p>
+          </div>
+        </div>
+      </div>
+       <!--18th-->
+       <div class="product_card col-4" id="PD_18">
+        <div class="image_box">
+          <img src="product_image/airdopes/airdopes-431-blue.png" id="SI_18">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_18">BoAt Airdopes 431 - Wireless Earbuds</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_18">₹1999.00</p>
+          </div>
+        </div>
+      </div>
+       <!--19th-->
+       <div class="product_card col-4" id="PD_19">
+        <div class="image_box">
+          <img src="product_image/airdopes/airdopes-511-v2.png" id="SI_19">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_19">BoAt Airdopes 511 V2 - Wireless Earbuds</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_19">₹2499.00</p>
+          </div>
+        </div>
+      </div>
+       <!--20th-->
+       <div class="product_card col-4" id="PD_20">
+        <div class="image_box">
+          <img src="product_image/earphone/rockerz-205-v2-blue_.png" id="SI_20">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_20">BoAt Rockerz 205 V2 - Wireless Earphone</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_20">₹999.00</p>
+          </div>
+        </div>
+      </div>
+       <!--21th-->
+       <div class="product_card col-4" id="PD_21">
+        <div class="image_box">
+          <img src="product_image/headphone/rockerz-600-black_900x.png" id="SI_21">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_21">BoAt Rockerz 600 - Wireless Headphone</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_21">₹1899.00</p>
+          </div>
+        </div>
+      </div>
+       <!--22th-->
+       <div class="product_card col-4" id="PD_22">
+        <div class="image_box">
+          <img src="product_image/earphone/rockerz-261-red_bfb4b061-a542-4d65-af4b-141d22dfad2d_540x.png" id="SI_22">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_22">BoAt Rockerz 261 - Wireless Earphone</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_22">₹1199.00</p>
+          </div>
+        </div>
+      </div>
+       <!--23th-->
+       <div class="product_card col-4" id="PD_23">
+        <div class="image_box">
+          <img src="product_image/headphone/rockerz-400-blue_540x.png" id="SI_23">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details"> 
+          <div class="product_name">
+            <h4 id="PN_23">BoAt Rockerz 400 - Wireless Headphone</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_23">₹1499.00</p>
+          </div>
+        </div>
+      </div>
+       <!--24th-->
+       <div class="product_card col-4" id="PD_24">
+        <div class="image_box">
+          <img src="product_image/airdopes/airdopes-201-green.png" id="SI_24">
+          <div class="overlay">
+            <button><a href="#buySection" onclick="MoverRight()">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product_details">
+          <div class="product_name">
+            <h4 id="PN_24">BoAt Airdopes 201 - Wireless Earbuds</h4>
+          </div>
+          <div class="product_price">
+            <p id="PP_24">₹1699.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!---------------------------------------------------------------------------------------------------->
+    <!--Buy container-->
+    <div class="buy_container" id="buySection">
+      <div class="buy_box" id="buy_mover">
+          <div class="buy_info">
+              <img src="" id="display_productimage">
+          </div>
+          <div class="buy_method">
+               <p id="remove" onclick="MoverLeft()"><i class="fa fa-times" aria-hidden="true"></i></p>
+              <h4 id="display_productname">BoAt Rockerz 223 - Wireless Earphone</h4>
+              <p id="display_productprice">₹1499.00</p>
+              <button>Buy Now</button>
+              <button>Add to Cart</button>
+          </div>
+      </div>
+      <div class="video_con" id="video_mover">
+        <div class="video">
+          <video autoplay controls muted loop>
+            <source src="video/The will of champions _SoundOfChampions(1080P_HD)_1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+  </div>
+
+  <!---------------------------------------------------------------------------------------------------->
+
+     <!-- -----------Footer------------- -->
+     <div class="footer-container" id="footer">
+      <div class="partner-box">
+        <h5>Partners</h5>
+        <hr>
+         <a href="https://www.1stop.ai/" target="blank"><img src="image/1Stop 01.png" alt="" ></img></a>
+         <a href="https://lms1stopai.thinkific.com/" target="blank"><p>Support's School</p></a>
+      </div>
+      <div class="social_media">
+        <h5>Follow Us</h5>
+        <hr>
+        <ul>
+         <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></i></li>
+         <li><a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></i></li>
+         <!-- <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></i></li> -->
+         </ul>
+         <ul>
+         <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></i></li>
+         <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+         <!-- <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a></i></li> -->
+       </ul>
+
+      </div>
+      <div class="design_by">
+        <h5>Pages</h5>
+        <hr>
+        <ul>
+          <a href="home.html"><li>Home</li></a>
+          <a href="product.html"><li>Products</li></a>
+          <a href="about.html"><li>About</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+          <a href="account.html"><li>Log Out</li></a>
+        </ul>
+      </div>
+    </div>
+
+      
+       <script>
+          var Buy_con = document.getElementById("buy_mover");
+          var Video_con = document.getElementById("video_mover");
+
+          function MoverRight()
+          {
+            Video_con.style.transform = "translateX(1200px)";
+            Buy_con.style.transform = "translateX(1200px)";
+          }
+
+          function MoverLeft()
+          {
+            Video_con.style.transform = "translateX(0px)";
+            Buy_con.style.transform = "translateX(0px)";
+          }
+
+       </script>
+           
+
+      <script src="app.js"></script>
+      </body>
+      </html>

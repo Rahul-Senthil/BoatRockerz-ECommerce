@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Rockerz|About</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">  
+     
+  </head>
+  <style>
+      .video_con_a .video_a{
+        width: 1000px;
+        margin-left: 275px;
+        transform: translateY(-400px);
+        margin-top: 450px;
+        
+        
+    }
+
+    .video_con_a .video_a video{
+        width: 100%;
+    }
+
+    .about-us_container{
+        margin-top: -300px;
+    }
+
+    @media only  screen and (max-width:360px) {
+
+        .video_con_a .video_a{
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 450px;
+        }
+
+
+        .video_con_a .video_a video{
+            width: 100%;
+            transform: translateY(0px);
+            
+        }
+
+        .about-us_container{
+        margin-top: -430px;
+    }
+}
+
+
+  </style>
+  <body>
+    <!--navbar-->
+      <div class="nav-bar_container">
+          <div class="navbar">
+              <div class="logo">
+                <img src="image/logo.jpeg" alt="">
+                <h2>BoAt Rockerz</h2>
+              </div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="home.html" id="home-page">Home</a></li>
+                    <li><a href="product.html" id="product-page">Products</a></li>
+                    <li><a href="about.html" id="about-page">About</a></li>
+                    <li><a href="contact.html"  id="contact-page">Contact</a></li>
+                    <li><a href="account.html" id="account-page">Account</a></li>
+                </ul>
+          </nav>
+          <i class="fa fa-bars" onclick="togglesidebar()"></i>
+        </div>
+    </div>
+
+    <div class="video_con_a" id="video_mover">
+        <div class="video_a">
+          <video autoplay controls loop>
+            <source src="video/The will of champions _SoundOfChampions(1080P_HD)_1.mp4" type="video/mp4" >
+          </video>
+        </div>
+      </div>
+
+      <!--About-->
+     <div class="about-us_container" id="About_us">
+        <div class="abt">
+          <h3>About Us</h3>
+        </div>
+         <div  class="about-us">
+           <div class="about-product">
+             <div class="title">
+              <h3>BoAt </h3>
+              <img src="image/logo.jpeg">
+             </div>
+             
+            <p>
+              BoAt is an Indian based consumer electronics brand established in 2015 that markets earphones,
+              headphones stereos, travel chargers and premium rugged cables. Imagine Marketing Services Private Limited, which does business as BoAt, was incorporated in November 2013 by co-founders Sameer Ashok Mehta and Aman Gupta.
+            </p>
+            <h5> Products and brands</h5>
+            <p>BoAt designs and markets a variety of audio-focused consumer electronics including wireless earbuds, wired headphones, wireless speakers, home audio equipment, and an assortment of mobile phone accessories.</p>
+           </div>
+           
+           <div class="bg2">
+            <img src="image/background image 1.png" alt="">
+           </div>
+         </div>
+       </div>
+
+        <!-- -----------Footer------------- -->
+     <div class="footer-container" id="footer" style="margin-top: 0px;">
+        <div class="partner-box">
+          <h5>Partners</h5>
+          <hr>
+           <a href="https://www.1stop.ai/" target="blank"><img src="image/1Stop 01.png" alt="" ></img></a>
+           <a href="https://lms1stopai.thinkific.com/" target="blank"><p>Support's School</p></a>
+        </div>
+        <div class="social_media">
+          <h5>Follow Us</h5>
+          <hr>
+          <ul>
+           <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></i></li>
+           <li><a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></i></li>
+           <!-- <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></i></li> -->
+           </ul>
+           <ul>
+           <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></i></li>
+           <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+           <!-- <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a></i></li> -->
+         </ul>
+  
+        </div>
+        <div class="design_by">
+          <h5>Pages</h5>
+          <hr>
+          <ul>
+            <a href="home.html"><li>Home</li></a>
+            <a href="product.html"><li>Products</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <a href="account.html"><li>Log Out</li></a>
+          </ul>
+        </div>
+      </div>
+
+      <script src="app.js"></script>
+    </body>
+    </html>

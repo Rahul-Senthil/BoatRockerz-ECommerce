@@ -1,0 +1,22 @@
+.purchase__container{
+    width: 60%;
+    height: 500px;
+    border: 1px solid #ff0000;
+    margin-left: 20%;
+    margin-top: 50px;
+    display: flex;
+}
+
+.sub__purchase{
+    width: 50%;
+    border: 1px solid blue;
+    height: 500px;
+}
+
+.img__purchase{
+    width: 350px;
+    height: 350px;
+    border: 1px solid green;
+    margin-left: 53px;
+    margin-top: 20px;
+}
